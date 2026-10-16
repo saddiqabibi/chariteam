@@ -446,3 +446,55 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+/*** Mission Vision Values ***/
+.bg-white.rounded.p-4 h4 {
+    font-weight: 600;
+}
+
+/*** Why Choose Us ***/
+.flex-shrink-0.btn-square {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+}
+
+/*** How It Works ***/
+.btn-square.rounded-circle span {
+    font-family: 'Saira', sans-serif;
+}
+
+/*** Blog Cards Hover ***/
+.bg-white.rounded.overflow-hidden.shadow-sm {
+    transition: .5s;
+}
+
+.bg-white.rounded.overflow-hidden.shadow-sm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1) !important;
+}
+
+/*** Carousel Caption Improvements ***/
+.carousel-caption h1 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.carousel-caption p {
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+/*** Donate Form ***/
+.donate form .btn-check:checked + .btn-light {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+/*** Stats Section ***/
+.bg-primary .display-1 {
+    font-weight: 700;
+}
+
+/*** Footer Improvements ***/
+.footer .btn-link {
+    text-decoration: none;
+}
