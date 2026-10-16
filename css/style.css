@@ -498,27 +498,40 @@
 .footer .btn-link {
     text-decoration: none;
 }
-/*** Carousel Mobile Responsive Fix ***/
+/*** Carousel Mobile Responsive Fix - Perfect ***/
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
-        min-height: 100vh;
+        height: 100vh;
+        min-height: auto;
+    }
+    
+    #header-carousel .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    #header-carousel .carousel-caption {
+        padding: 100px 0 60px 0;
     }
     
     #header-carousel .carousel-caption h1 {
-        font-size: 2rem !important;
+        font-size: 30px !important;
         line-height: 1.3;
         margin-bottom: 15px;
     }
     
     #header-carousel .carousel-caption p {
-        font-size: 1.1rem !important;
+        font-size: 16px !important;
         line-height: 1.5;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #header-carousel .carousel-caption .btn {
-        font-size: 1rem;
-        padding: 12px 25px !important;
+        font-size: 15px;
+        padding: 10px 22px !important;
     }
     
     #header-carousel .carousel-caption .col-lg-8 {
@@ -529,10 +542,15 @@
 
 @media (max-width: 576px) {
     #header-carousel .carousel-caption h1 {
-        font-size: 1.6rem !important;
+        font-size: 26px !important;
     }
     
     #header-carousel .carousel-caption p {
-        font-size: 1rem !important;
+        font-size: 15px !important;
+    }
+    
+    #header-carousel .carousel-caption .btn {
+        font-size: 14px;
+        padding: 10px 20px !important;
     }
 }
