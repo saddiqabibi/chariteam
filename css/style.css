@@ -498,20 +498,22 @@
 .footer .btn-link {
     text-decoration: none;
 }
-/*** Carousel Mobile Responsive Fix - Perfect ***/
+/*** Carousel Mobile Responsive Fix - Final ***/
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
-        height: 100vh;
+        height: auto;
         min-height: auto;
     }
     
     #header-carousel .carousel-item img {
-        height: 100vh;
+        position: relative;
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
     
     #header-carousel .carousel-caption {
-        padding: 100px 0 60px 0;
+        padding: 60px 0;
     }
     
     #header-carousel .carousel-caption h1 {
@@ -531,7 +533,7 @@
     
     #header-carousel .carousel-caption .btn {
         font-size: 15px;
-        padding: 4px 12px !important;
+        padding: 10px 22px !important;
     }
     
     #header-carousel .carousel-caption .col-lg-8 {
@@ -541,6 +543,10 @@
 }
 
 @media (max-width: 576px) {
+    #header-carousel .carousel-caption {
+        padding: 50px 0;
+    }
+    
     #header-carousel .carousel-caption h1 {
         font-size: 26px !important;
     }
