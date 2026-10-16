@@ -501,7 +501,7 @@
 /*** Carousel Mobile Responsive Fix - Perfect ***/
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
-        height: 100vh;
+        /* height: 100vh; */
         min-height: auto;
     }
     
@@ -531,7 +531,7 @@
     
     #header-carousel .carousel-caption .btn {
         font-size: 15px;
-        padding: 10px 22px !important;
+        padding: 4px 12px !important;
     }
     
     #header-carousel .carousel-caption .col-lg-8 {
