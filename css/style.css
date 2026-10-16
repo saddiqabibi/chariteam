@@ -540,24 +540,4 @@
     #header-carousel .carousel-caption p {
         font-size: 0.85rem !important;
     }
-}/*** Carousel Overlay Better ***/
-.carousel-caption {
-    background: rgba(0, 29, 35, 0.85);
-    padding: 20px;
-}
-
-/*** Carousel Height on Mobile ***/
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        height: 100vh;
-    }
-    
-    #header-carousel .carousel-item img {
-        height: 100vh;
-        object-fit: cover;
-    }
-    
-    .carousel-caption .col-lg-8 {
-        padding-top: 80px !important;
-    }
 }
