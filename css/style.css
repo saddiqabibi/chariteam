@@ -503,27 +503,34 @@
     #header-carousel .carousel-item {
         height: auto;
         min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
     
     #header-carousel .carousel-item img {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
+        z-index: 0;
     }
     
     #header-carousel .carousel-caption {
-        padding: 60px 0;
+        position: relative;
+        padding: 20px 0;
+        z-index: 2;
     }
     
     #header-carousel .carousel-caption h1 {
-        font-size: 30px !important;
+        font-size: 28px !important;
         line-height: 1.3;
         margin-bottom: 15px;
     }
     
     #header-carousel .carousel-caption p {
-        font-size: 16px !important;
+        font-size: 15px !important;
         line-height: 1.5;
         margin-bottom: 20px;
         max-width: 95%;
@@ -532,7 +539,7 @@
     }
     
     #header-carousel .carousel-caption .btn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 10px 22px !important;
     }
     
@@ -540,23 +547,31 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    
+    /*** Navbar z-index fix ***/
+    .fixed-top {
+        z-index: 1030;
+    }
+    
+    /*** Carousel controls position ***/
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+        z-index: 3;
+    }
 }
 
 @media (max-width: 576px) {
-    #header-carousel .carousel-caption {
-        padding: 50px 0;
-    }
-    
     #header-carousel .carousel-caption h1 {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     
     #header-carousel .carousel-caption p {
-        font-size: 15px !important;
+        font-size: 14px !important;
     }
     
     #header-carousel .carousel-caption .btn {
-        font-size: 14px;
-        padding: 10px 20px !important;
+        font-size: 13px;
+        padding: 8px 18px !important;
     }
 }
